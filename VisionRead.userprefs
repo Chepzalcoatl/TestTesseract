@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{558CF08B-2881-4B04-B5D2-7E408F784406}|Default">
+  <MonoDevelop.Ide.ItemProperties.VisionRead PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.3d0c3cc7ab346b1ba58955bce55963ab854db906" automaticSigning="False" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VisionRead/Utils/ViewCroppingArea.cs">
+    <Files>
+      <File FileName="VisionRead/Controllers/ViewControllerPrueba.cs" Line="1" Column="1" />
+      <File FileName="VisionRead/Utils/Extensiones.cs" Line="1" Column="1" />
+      <File FileName="VisionRead/Utils/ViewCroppingArea.cs" Line="1" Column="1" />
+      <File FileName="VisionRead/Info.plist" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="VisionRead/ViewControllerPrueba.cs" line="59" offsetX="726" offsetY="870" expression="imagenToCrop.Image" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+</Properties>

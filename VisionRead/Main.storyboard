@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JF0-yB-gRx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="INE-z5-6Ue">
+            <objects>
+                <navigationController id="JF0-yB-gRx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SHn-hg-UFC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MIf-QD-6xZ" kind="relationship" relationship="rootViewController" id="6p9-0I-iGA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yz-MB-r0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-929" y="130"/>
+        </scene>
+        <!--View Controller Prueba-->
+        <scene sceneID="MMz-vm-Bg1">
+            <objects>
+                <viewController id="MIf-QD-6xZ" customClass="ViewControllerPrueba" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jLL-xz-adz"/>
+                        <viewControllerLayoutGuide type="bottom" id="E6G-Pz-kkx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Exr-aF-UMk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8AA-22-qbQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dRr-cd-jTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dRr-cd-jTF" firstAttribute="top" secondItem="8AA-22-qbQ" secondAttribute="top" id="4di-8C-rJI"/>
+                                    <constraint firstItem="dRr-cd-jTF" firstAttribute="centerX" secondItem="8AA-22-qbQ" secondAttribute="centerX" id="Qbm-cJ-gLJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="dRr-cd-jTF" secondAttribute="bottom" id="WzL-de-xcd"/>
+                                    <constraint firstAttribute="trailing" secondItem="dRr-cd-jTF" secondAttribute="trailing" id="XW9-5U-a0S"/>
+                                    <constraint firstItem="dRr-cd-jTF" firstAttribute="centerY" secondItem="8AA-22-qbQ" secondAttribute="centerY" id="s0D-qm-6rm"/>
+                                    <constraint firstItem="dRr-cd-jTF" firstAttribute="leading" secondItem="8AA-22-qbQ" secondAttribute="leading" id="zkW-HH-LhX"/>
+                                </constraints>
+                            </scrollView>
+                            <view opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30O-I4-Jdz" customClass="ViewCroppingArea">
+                                <rect key="frame" x="0.0" y="316.5" width="375" height="94"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="30O-I4-Jdz" secondAttribute="height" multiplier="16:4" id="6ef-aC-nLw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="30O-I4-Jdz" firstAttribute="centerY" secondItem="Exr-aF-UMk" secondAttribute="centerY" constant="30" id="0HJ-RR-oLv"/>
+                            <constraint firstItem="8AA-22-qbQ" firstAttribute="width" secondItem="Exr-aF-UMk" secondAttribute="width" id="Gal-B3-7bS"/>
+                            <constraint firstItem="8AA-22-qbQ" firstAttribute="top" secondItem="jLL-xz-adz" secondAttribute="bottom" id="L4v-e8-rfj"/>
+                            <constraint firstAttribute="trailing" secondItem="30O-I4-Jdz" secondAttribute="trailing" id="ZqT-6j-d4G"/>
+                            <constraint firstItem="30O-I4-Jdz" firstAttribute="centerX" secondItem="Exr-aF-UMk" secondAttribute="centerX" id="ZwY-LK-tJ4"/>
+                            <constraint firstItem="8AA-22-qbQ" firstAttribute="centerX" secondItem="Exr-aF-UMk" secondAttribute="centerX" id="aVB-xH-zI0"/>
+                            <constraint firstItem="E6G-Pz-kkx" firstAttribute="top" secondItem="8AA-22-qbQ" secondAttribute="bottom" id="lja-NG-Cvy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CAN-Di-KsF">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="play" id="Q5l-K1-tdT">
+                                <connections>
+                                    <action selector="BtnCropping_Activated:" destination="MIf-QD-6xZ" id="897"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="Ox6-g9-Ah2">
+                                <connections>
+                                    <action selector="BtnCamera_Activated:" destination="MIf-QD-6xZ" id="799"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="CropperView" destination="30O-I4-Jdz" id="name-outlet-30O-I4-Jdz"/>
+                        <outlet property="ScrollViewFoto" destination="8AA-22-qbQ" id="name-outlet-8AA-22-qbQ"/>
+                        <outlet property="btnCamera" destination="Ox6-g9-Ah2" id="name-outlet-Ox6-g9-Ah2"/>
+                        <outlet property="btnCropping" destination="Q5l-K1-tdT" id="name-outlet-Q5l-K1-tdT"/>
+                        <outlet property="imagenToCrop" destination="dRr-cd-jTF" id="name-outlet-dRr-cd-jTF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nA-NH-hpo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="129.08545727136433"/>
+        </scene>
+    </scenes>
+</document>
